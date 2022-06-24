@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.calc {
+  width: 400px;
+  background-color: black;
+  color: white;
+}
+
+.screen {
+  font-size: 40px;
+  font-family: "Courier New", Courier, monospace;
+  text-align: right;
+  padding: 20px 5px;
+}
+
+.calc-button {
+  background-color: #d8d9db;
+  color: black; /*make sure the text is high contrast compared to the background. AA a11y colors standard for disability */
+  height: 100px;
+  width: 24.5%; /* we want that little tiny border */
+  border: none; /* remove borders from buttons */
+  border-radius: 0; /* rounding corners, buttons have rounded corners by default */
+  font-size: 40px;
+  cursor: pointer; /*so that users thinks they can click on it*/
+}
+
+.calc-button:hover {
+  background-color: #ebebeb; /*make it lighter when the user hovers*/
+}
+
+.calc-button:active { /*active means when its being pushed down*/
+  background-color: #bbbcbe;
+}
+
+.calc-button:last-child { /*we want last column to be orange*/
+  background-color: #df974c;
+  color: white;
+}
+
+.calc-button:last-child:hover { /*combine these pseudo elements*/
+    background-color: #dfb07e;
+}
+
+.calc-button:last-child:active {
+  background-color: #dd8d37;
+}
+
+.double {
+  width: 49.7%;
+}
+
+.triple {
+  width: 74.8%;
+}
+
+.calc-row {
+  display: flex;
+  align-content: stretch;
+  justify-content: space-between;
+  margin-bottom: 0.5%;
+}
+
+/** {*/
+/*  font-family: Arial, monospace;*/
+/*  font-size: 40px;*/
+/*  font-weight: lighter;*/
+/*  width: 400px;*/
+/*  height: 100px;*/
+/*}*/
+
+/*.screen {*/
+/*  display: flex;*/
+/*  justify-content: flex-end;*/
+/*  color: white;*/
+/*  background-color: black;*/
+/*  font-size: 75px;*/
+/*  width: 390px;*/
+/*  padding-right: 10px;*/
+/*}*/
+
+/*button {*/
+/*  background-color: #d8d9db;*/
+/*  color: black;*/
+/*  width: 24.5%;*/
+/*  cursor:pointer;*/
+/*  border: 1px black solid;*/
+/*}*/
+
+/*button:hover {*/
+/*  background-color: #ebebeb;*/
+/*}*/
+
+/*button:active {*/
+/*  background-color: #bbbcbe;*/
+/*}*/
+
+/*button:last-child {*/
+/*  background-color: #df974c;*/
+/*  color: white;*/
+/*}*/
+
+/*button:last-child:hover {*/
+/*  background-color: #dfb07e;*/
+/*}*/
+
+/*button:last-child:active {*/
+/*  background-color: #dd8d37;*/
+/*}*/
+
+/*.top-row {*/
+/*  display: flex;*/
+/*  box-sizing: border-box;*/
+/*  justify-content: space-between;*/
+/*  margin-bottom: .5%;*/
+/*}*/
+
+/*.second-row {*/
+/*  display: flex;*/
+/*  box-sizing: border-box;*/
+/*  justify-content: space-between;*/
+/*  margin-bottom: .5%;*/
+/*}*/
+
+/*.third-row {*/
+/*  display: flex;*/
+/*  box-sizing: border-box;*/
+/*  justify-content: space-between;*/
+/*  margin-bottom: .5%;*/
+/*}*/
+
+/*.forth-row {*/
+/*  display: flex;*/
+/*  box-sizing: border-box;*/
+/*  justify-content: space-between;*/
+/*  margin-bottom: .5%;*/
+/*}*/
+
+/*.bottom-row {*/
+/*  display: flex;*/
+/*  box-sizing: border-box;*/
+/*  justify-content: space-between;*/
+/*}*/
+
+/*.clear {*/
+/*  width: 49.8%;*/
+/*}*/
+
+/*.zero {*/
+/*  width: 74.8%;*/
+/*}*/
+
+
+

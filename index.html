@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Calculator</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -17,7 +17,7 @@
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/calculator.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -28,37 +28,71 @@
     <section class="screen">
       0
     </section>
-    <div class="top-row">
-      <button class="clear">C</button>
-      <button class="backspace">←</button>
-      <button class="divide ">÷</button>
-    </div>
-    <div class="second-row">
-      <button class="seven">7</button>
-      <button class="eight">8</button>
-      <button class="nine">9</button>
-      <button class="multiply ">×</button>
-    </div>
-    <div class="third-row">
-      <button class="four">4</button>
-      <button class="five">5</button>
-      <button class="six">6</button>
-      <button class="subtract ">-</button>
-    </div>
-    <div class="forth-row">
-      <button class="one">1</button>
-      <button class="two">2</button>
-      <button class="three">3</button>
-      <button class="addition ">+</button>
-    </div>
-    <div class="bottom-row">
-      <button class="zero">0</button>
-      <button class="equals ">=</button>
-    </div>
+    <!-- .calc-row*4>button.calc-button*5 then hit tab-->
+    <section class="calc-buttons">
+      <div class="calc-row">
+        <button class="double calc-button">C</button>
+        <button class="calc-button">←</button>
+        <button class="calc-button">%</button>
+      </div>
+      <div class="calc-row">
+        <button class="calc-button">7</button>
+        <button class="calc-button">8</button>
+        <button class="calc-button">9</button>
+        <button class="calc-button">×</button>
+      </div>
+      <div class="calc-row">
+        <button class="calc-button">4</button>
+        <button class="calc-button">5</button>
+        <button class="calc-button">6</button>
+        <button class="calc-button">-</button>
+      </div>
+      <div class="calc-row">
+        <button class="calc-button">1</button>
+        <button class="calc-button">2</button>
+        <button class="calc-button">3</button>
+        <button class="calc-button">+</button>
+      </div>
+      <div class="calc-row">
+        <button class="triple calc-button">0</button>
+        <button class="calc-button">=</button>
+      </div>
+
+<!--      <div class="top-row">-->
+<!--        <button class="clear">C</button>-->
+<!--        <button class="backspace">←</button>-->
+<!--        <button class="divide ">÷</button>-->
+<!--      </div>-->
+<!--      <div class="second-row">-->
+<!--        <button class="seven">7</button>-->
+<!--        <button class="eight">8</button>-->
+<!--        <button class="nine">9</button>-->
+<!--        <button class="multiply ">×</button>-->
+<!--      </div>-->
+<!--      <div class="third-row">-->
+<!--        <button class="four">4</button>-->
+<!--        <button class="five">5</button>-->
+<!--        <button class="six">6</button>-->
+<!--        <button class="subtract ">-</button>-->
+<!--      </div>-->
+<!--      <div class="forth-row">-->
+<!--        <button class="one">1</button>-->
+<!--        <button class="two">2</button>-->
+<!--        <button class="three">3</button>-->
+<!--        <button class="addition ">+</button>-->
+<!--      </div>-->
+<!--      <div class="bottom-row">-->
+<!--        <button class="zero">0</button>-->
+<!--        <button class="equals ">=</button>-->
+<!--      </div>-->
+    </section>
   </div>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/calculator.js"></script>
+  <!-- put the script tag at the end, right before the end of body because you want all the HTML and CSS to load
+   first then you want to load the JavaScript. If it put it at the top, its going to make everything wait for your
+   JS to load. You want to show something to your user so that it feels faster -->
 </body>
 
 </html>
